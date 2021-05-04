@@ -1,0 +1,40 @@
+$servicename = @(
+    "AxInstSV" #ActiveX Installer (AxInstSV)
+    "PeerDistSvc" #BranchCache
+    "CertPropSvc" #Certificate Propagation 
+    "TrkWks" #Distributed Link Tracking Client
+    "MSDTC" #Distributed Transaction Coordinator
+    "MapsBroker" #Downloaded Maps Manager
+    "Fax" #Fax
+    "FDResPub" #Function Discovery Resource Publication
+    "lfsvc" #Geolocation Service
+    "AppVClient" #Microsoft App-V Client
+    "Netlogon" #Netlogon
+    "PNRPAutoReg" #PNRP Machine Name Publication Service
+    "WPDBusEnum" #Portable Device Enumerator Service
+    "Spooler" #Print Spooler
+    "PrintNotify" #Printer Extensions and Notifications
+    # "TermService" #Remote Desktop Services
+    "RemoteRegistry" #Remote Registry 
+    "SensorDataService" #Sensor Data Service
+    "SensrSvc" #Sensor Monitoring Service
+    "SensorService" #SensorService 
+    "ShellHWDetection" #Shell Hardware Detection 
+    "SCardSvr" #Smart Card
+    "ScDeviceEnum" #Smart Card Device Enumeration Service
+    "SCPolicySvc" #Smart Card Removal Policy
+    "WerSvc" #Windows Error Reporting Service
+    "WSearch" #Windows Search
+    "wmiApSrv" #WMI Performance Adapte
+    "XblAuthManager" #Xbox Live Auth Manager
+    "XblGameSave" #Xbox Live セーブ データ
+    "XboxGipSvc" #Xbox Accessory Management Service
+    "XboxNetApiSvc" #Xbox Live ネットワーキング サービス
+    "DusmSvc" #データ使用状況(DusmSvc)
+    "RetailDemo" #市販デモサービス
+    "tzautoupdate" #タイムゾーンの自動更新機能
+)
+
+for($i=0; $i -lt $servicename.count; $i++) {
+    Write-Output($i + " : " + $servicename[$i])
+}
