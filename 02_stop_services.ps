@@ -36,5 +36,6 @@ $servicename = @(
 )
 
 for($i=0; $i -lt $servicename.count; $i++) {
-    Write-Output($i + " : " + $servicename[$i])
+    Write-Output(""+$i + " : " + $servicename[$i])
+    Set-Service $servicename[$i] -StartupType Disabled
 }
